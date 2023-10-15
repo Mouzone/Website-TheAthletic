@@ -45,12 +45,11 @@ table {
 
 .top_bar{
     display: flex;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 15px;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 13px;
     padding-bottom: 15px;
     align-items: center;
-    flex-grow: 1;
     justify-content: space-between;
     font-size: 14px;
 
@@ -72,11 +71,12 @@ table {
 }
 
 .logo{
-    font-weight:900;
-    font-size:20px;
-    padding-right: 13px;
-    border-right: solid;
-    border-color: gray;
+    height: 20px;
+    padding: 0;
+}
+
+.topic{
+    color: lightgray;
 }
 
 .ellipses{
