@@ -3,11 +3,14 @@
     flex-direction: column;
     background-color: black;
     color: white;
+    font-family: Calibre, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
 }
 
 .top_bar{
     display: flex;
-    gap: 10px;
+    gap: 20px;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 20px;
@@ -31,4 +34,16 @@
 
 .utility{
     display: flex;
+    gap: 20px;
+}
+
+button.subscribe{
+    background-color: #b72424;
+    color:white;
+    border-radius: 3%;
+    padding: 10px;
+    border-color: black;
+    width: 150px;
+    border: none; /* Remove the border */
+    box-shadow: none; /* Remove any box-shadow or shadow effect */
 }
