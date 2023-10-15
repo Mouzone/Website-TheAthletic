@@ -52,19 +52,19 @@ table {
     align-items: center;
     justify-content: space-between;
     font-size: 14px;
-
 }
 
 .three_bars{
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 2.5px;
     align-items: center;
+    padding-bottom: 1px;
 }
 
 .bar{
-    border: .5px solid;
-    width: 17px;
+    border: .9px solid;
+    width: 16px;
     height: 1.5px;
     background-color: white;
     border-radius: 10%;
@@ -73,10 +73,17 @@ table {
 .logo{
     height: 20px;
     padding: 0;
+    padding-bottom: 5px;
+    padding-left: 4px;
+}
+
+.logo + div {
+    padding-left: 30px;
+    border-left: 1.5px gray solid;
 }
 
 .topic{
-    color: lightgray;
+    color: white;
 }
 
 .ellipses{
@@ -85,21 +92,18 @@ table {
     letter-spacing: 2px;
 }
 
-.utility{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    font-weight: 600;
+.search{
+    height: 20px;
 }
-
 button.subscribe{
     background-color: #b72424;
     color:white;
     border-radius: 3%;
-    padding: 10px;
     border-color: black;
-    width: 150px;
+    width: 140px;
+    height: 32px;
     border: none; /* Remove the border */
     box-shadow: none; /* Remove any box-shadow or shadow effect */
-    font-weight: bold;
+    font-weight:300;
+    letter-spacing: 1px;
 }
