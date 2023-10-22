@@ -52,3 +52,20 @@ table {
     height: 60px;
 }
 
+.all{
+    display: grid;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    grid-template-rows: repeat(4, 25%);
+    grid-template-columns: 55% 45%;
+    height: calc(100vh - 60px - 20px - 20px);
+}
+
+.article{
+    border: solid black
+}
+
+#one{
+    grid-area: 1/1/5/2;
+}
+
