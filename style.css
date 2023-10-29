@@ -34,16 +34,23 @@ table {
 	border-spacing: 0; 
 }
 /***************************************************************************************************************************/
+@font-face {
+    font-family: "Tiempo";
+    src: url('fonts/test-tiempos-text-regular.woff2') format('woff2');
+    /* You can also specify other font formats here, such as WOFF and TTF, for wider compatibility */
+  }
+  
 .html {
     width: 100vw;
 }
+
 .header{
     display: flex;
     background-color: rgb(26, 26, 26);
     justify-content: center;    
     align-items: center;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -52,20 +59,109 @@ table {
     height: 60px;
 }
 
+/***************************************************************************************************************************/
 .all{
     display: grid;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    grid-template-rows: repeat(4, 25%);
+    margin-left: 7vw;
+    margin-right: 7vw;
     grid-template-columns: 55% 45%;
-    height: calc(100vh - 60px - 20px - 20px);
+    height: 95vh;
+    font-family: "Tiempo";
+    padding-top: 40px;
+    border-bottom: solid gainsboro;
+}
+
+.left{
+    height: 95%;
+    padding-bottom: 0px;
+    border-right: solid gainsboro;
+    padding-right: 20px;
+}
+
+.big img{
+    width: auto;
+    height: 450px;
+}
+.big{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.big>.title{
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+
+}
+
+.big>.blurb{
+    font-size: .875rem;
+    font-weight: 300;
+    color: gray;
+    line-height: 1.5;
+
+}
+
+.last-row{
+    display: flex;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .6rem;
+    color: gray;
+}
+
+.comments{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.comments > svg{
+    width: 10px;
+    height: auto;
+}
+
+.right{
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 .article{
-    border: solid black
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: solid gainsboro;
+    gap:20px;
+    padding-top: 20px;
 }
 
-#one{
-    grid-area: 1/1/5/2;
+.right .article:first-child{
+    padding-top:0px
+}
+
+.right .article:last-child{
+    border:none;
+    padding-bottom:0px;
+}
+
+.article > .text{
+    display: flex;
+    flex-direction: column;
+    gap:13px;
+    line-height: 1.5;
+
+}
+.article img{
+    height: 90px;
+    width: 130px;
+    object-fit: cover;
+    display: block;
+    line-height: 1.5;
+
 }
 
